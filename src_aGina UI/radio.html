@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+	<title>agosto</title>
+<style>
+</style>
+</head> 
+<script src="js/radio.js"></script>
+<script>
+window.onload=function (){
+	var sex=document.getElementsByName('sex');
+	var blod=document.getElementsByName('blod');
+	radio(sex);
+	radio(blod);
+};
+</script>
+<body>
+	<form action="test.html" method="get">
+		<!-- <span class="active">男</span>
+		<span>女</span> -->
+		<input type="radio" name="sex" value="male" checked data-tit="男"/>
+		<input type="radio" name="sex" value="female" data-tit="女"/>
+		<input type="submit" value="提交"/>
+		<hr/>
+		<input type="radio" name="blod" value="o" checked data-tit="O型" />
+		<input type="radio" name="blod" value="B"  data-tit="B型" />
+		<input type="radio" name="blod" value="A"  data-tit="A型" />
+		<input type="radio" name="blod" value="AB"  data-tit="AB型" />	
+		<input type="submit" value="提交" />
+
+	</form>	
+</body>
+</html>

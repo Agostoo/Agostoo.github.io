@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+	<title>agosto</title>
+<style>
+</style>
+<script src="js/checkbox.js"></script>
+<script>
+window.onload=function (){
+	var drink=document.getElementById('drink').getElementsByTagName('input');
+	var frut=document.getElementById('frut').getElementsByTagName('input');
+	checkbox(drink);
+	checkbox(frut);
+};	
+</script>
+</head> 
+
+<body>
+	<form action="test.html" method="get">
+		<!-- <span>酸奶</span>
+		<span>牛奶</span>
+		<span>咖啡</span>
+		<span>果汁</span> -->
+		<div id="drink">
+			<input type="checkbox" name="c1" value="yogus" data-tit="酸奶"/>
+			<input type="checkbox" name="c2" value="milk" data-tit="牛奶"/>
+			<input type="checkbox" name="c3" value="coffee" data-tit="咖啡"/>
+			<input type="checkbox" name="c4" value="juice" data-tit="果汁"/>
+		</div>		
+		<input type="submit" value="提交" />
+		<hr/>
+		<div id="frut">
+			<input type="checkbox" name="c1" value="apple" data-tit="苹果"/>
+			<input type="checkbox" name="c2" value="banna" data-tit="香蕉"/>
+			<input type="checkbox" name="c3" value="lemon" data-tit="柠檬"/>
+			<input type="checkbox" name="c4" value="grape" data-tit="葡萄"/>
+		</div>		
+		<input type="submit" value="提交" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{}
+        .box .on{ background: #399; color: #fff}
+        .box div{
+            width:200px;
+            height:200px;
+            border: 1px solid #000;
+            display: none;
+        }
+    </style>
+    <script src="js/tab.js"></script>
+    <script src="js/autoTab.js"></script>
+    <script>
+        window.onload=function(){
+            new Tab('div1');
+            new AutoTab('div2');
+        };
+    </script>
+</head>
+<body>
+    <div class="box" id="div1">
+        <input class="on" type="button" value="aaa"/>
+        <input type="button" value="bbb"/>
+        <input type="button" value="ccc"/>
+        <div style="display: block;">111</div>
+        <div>222</div>
+        <div>333</div>
+    </div>
+    <div class="box" id="div2">
+        <input class="on" type="button" value="aaa"/>
+        <input type="button" value="bbb"/>
+        <input type="button" value="ccc"/>
+        <div style="display: block;">111</div>
+        <div>222</div>
+        <div>333</div>
+    </div>
+</body>
+</html>

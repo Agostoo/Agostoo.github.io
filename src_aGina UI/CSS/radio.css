@@ -1,0 +1,4 @@
+*{padding: 0;margin:0;}
+span{background: url(../images/no.gif) no-repeat;padding-left: 20px;}
+.active{background: url(../images/yes.gif) no-repeat;padding-left: 20px;}	
+input[type=radio]{display: none;}

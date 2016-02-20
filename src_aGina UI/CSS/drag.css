@@ -1,0 +1,24 @@
+#div1{
+    width:100px;
+    height:100px;
+    background: red;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#div2{
+    width:100px;
+    height:100px;
+    background: blue;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#div3{
+    width:100px;
+    height:100px;
+    background: green;
+    position: absolute;
+    left:300px;
+    top:0;
+}
