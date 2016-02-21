@@ -36,7 +36,6 @@ Drag.prototype.fnMove=function(oEvent){
     this.oDiv.style.left=oEvent.clientX-this.disX+'px';
     this.oDiv.style.top=oEvent.clientY-this.disY+'px';
 
-    this.oDiv.innerHTML=oEvent.clientX+','+oEvent.clientY;
     this.oDiv.style.color='#fff';
 };
 Drag.prototype.fnUp=function(){
