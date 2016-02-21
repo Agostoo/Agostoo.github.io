@@ -1,8 +1,25 @@
-*{padding:0;margin:0;}
-ul,li{list-style: none;}
-#j_select{width: 100px;border:1px solid pink;text-align: center;}
-#j_select span{display: block;width: 100px;height: 30px;line-height: 30px;}
-#j_select ul{display: none;}
-#j_select li{width: 100px;height: 30px;line-height:30px;background: #f4c16c;}
-#j_select li:hover{background: orange;opacity: 0.8;}
+
+#j_select{
+	width: 100px;
+	border:1px solid pink;
+	text-align: center;
+}
+#j_select span{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+#j_select ul{
+	display: none;
+}
+#j_select li{
+	width: 100px;
+	height: 30px;
+	line-height:30px;
+	background: #f4c16c;
+}
+#j_select li:hover{
+	background: orange;
+	opacity: 0.8;}
 select{display: none;}	

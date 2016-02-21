@@ -3,24 +3,12 @@ Author: agostoGina
 Author URL: http://agostoo.github.io
 */
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0px;padding:0px;}
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-table{border-collapse:collapse;border-spacing:0;}
+*{list-style:none;margin:0px;padding:0px;}
 /* start editing from here */
 a{text-decoration:none;}
-.txt-rt{text-align:right;}/* text align right */
-.txt-lt{text-align:left;}/* text align left */
-.txt-center{text-align:center;}/* text align center */
-.float-rt{float:right;}/* float right */
-.float-lt{float:left;}/* float left */
 .clear{clear:both;}/* clear float */
 .pos-relative{position:relative;}/* Position Relative */
 .pos-absolute{position:absolute;}/* Position Absolute */
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
-.vertical-top{	vertical-align:top;}/* vertical align top */
 img{max-width:100%;}
 /*end reset*/
 body{
@@ -247,25 +235,26 @@ body{
 	font-weight:bold;
 	color:#FFF;
 }
-/* Self Clearing Goodness */
-.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+/*  Clearing  */
+.container:after { content: ''; display: block; height: 0; clear: both; visibility: hidden; }
 
 .clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
-  content: '\0020';
+.clearfix:after{
+  content: '';
   display: block;
   overflow: hidden;
   visibility: hidden;
   width: 0;
-  height: 0; }
-.row:after,
+  height: 0; 
+}
+
 .clearfix:after {
-  clear: both; }
-.row,
+  clear: both; 
+}
+
 .clearfix {
-  zoom: 1; }
+  zoom: 1; 
+}
 
 .clear {
   clear: both;
@@ -275,9 +264,7 @@ body{
   width: 0;
   height: 0;
 }
-.pagination2 li{
-	float:none;
-}
+
 /***** 404 ****/
 .page-not-found{
 	text-align:center;

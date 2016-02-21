@@ -1,4 +1,12 @@
-*{padding:0;margin:0;}
-span{background: url(../images/no1.gif) no-repeat;padding-left:20px;}	
-.active{background: url(../images/yes1.gif) no-repeat;padding-left:20px;}
-input[type=checkbox]{display: none;}
+
+span{
+	background: url(../images/no1.gif) no-repeat;
+	padding-left:20px;
+}	
+.active{
+	background: url(../images/yes1.gif) no-repeat;
+	padding-left:20px;
+}
+input[type=checkbox]{
+	display: none;
+}
