@@ -4,6 +4,7 @@
 	position:absolute;
 	width:210px;
 	border:1px solid pink;
+	background: #fff;
 	cursor: pointer;
 }
 .box a { 
