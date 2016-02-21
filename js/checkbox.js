@@ -5,7 +5,7 @@
 		{ 
 			addLink=true;
 			var oLink=document.createElement('link');
-			oLink.href='../css/checkbox.css';
+			oLink.href='css/checkbox.css';
 			oLink.rel='stylesheet';
 			var oHead=document.getElementsByTagName('head')[0];
 			oHead.appendChild(oLink);

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>aGina UI</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />   
+  
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+        .box .on{ background: #399; color: #fff}
+        .box div{
+            width:200px;
+            height:200px;
+            border: 1px solid #000;
+            display: none;
+        }
+    </style>
+    <script src="js/base.js"></script>
+    <script src="js/tab.js"></script>
+    
+    <script>
+        domReady(function(){
+            new AutoTab('div');
+        });
+    </script>
+</head>
+<body>
+    <!----start-header----->
+     <div class="header">
+         <div class="wrap">
+          <div class="header-top">
+            <!---start-top-nav---->
+            <div class="top-nav">
+                    <div class="top-header">
+                        <div class="logo">
+                            <a href="aGinaUI.html"><h1>aGina UI</h1></a>
+                        </div>
+                    </div>
+                    <nav class="nav clearfix">
+                        <!-- logo -->
+                         <div class="logo">
+                            <a href="aGinaUI.html"><h1>aGina UI</h1></a>
+                         </div>
+                        <!-- logo -->
+                    </nav>
+            </div>
+            <!---End-top-nav---->
+        </div>
+      </div>
+    </div>
+   <!----End-header----->
+         
+         <!---start-content---->
+         <div class="wrap">
+             <div class="content">      
+              <div class="about-data"> 
+               <h2>自动播放选项卡</h2>
+                <p>自动切换内容，鼠标移入内容区域或点击选项时停止播放。</p>          
+               <div class="showEffect">                     
+                    <div class="box" id="div">
+                        <input class="on" type="button" value="选项1"/>
+                        <input type="button" value="选项2"/>
+                        <input type="button" value="选项3"/>
+                        <div style="display: block;">选项1</div>
+                        <div>选项2</div>
+                        <div>选项3</div>
+                    </div>
+                </div>
+               </div>
+             </div>
+          </div>                    
+         <!---End-content---->
+         <!---start-footer---->
+          <div class="footer">
+            <div class="wrap">
+                <div class="copy-right">
+                    <p>Copyright &copy; 2016.agostoGina All rights reserved.<a href="http://agostoo.github.io">Agostoo.github</a></p>
+                </div>
+           </div>
+         </div>
+         <!---End-footer---->
+</body>
+</html>

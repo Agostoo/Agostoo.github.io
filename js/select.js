@@ -6,7 +6,7 @@
 		{
 			addLink=true;
 			var oLink=document.createElement('link');
-			oLink.href='../css/select.css';
+			oLink.href='css/select.css';
 			oLink.rel='stylesheet';
 			var oHead=document.getElementsByTagName('head')[0];
 			oHead.appendChild(oLink);

@@ -1,34 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8" />
-	<title>agosto</title>
-<style>
-</style>
-</head> 
+  <title>aGina UI</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />	
+  <script src="js/base.js"></script>
 <script src="js/radio.js"></script>
 <script>
-window.onload=function (){
+domReady(function (){
 	var sex=document.getElementsByName('sex');
 	var blod=document.getElementsByName('blod');
 	radio(sex);
 	radio(blod);
-};
+});
 </script>
-<body>
-	<form action="test.html" method="get">
-		<!-- <span class="active">男</span>
-		<span>女</span> -->
-		<input type="radio" name="sex" value="male" checked data-tit="男"/>
-		<input type="radio" name="sex" value="female" data-tit="女"/>
-		<input type="submit" value="提交"/>
-		<hr/>
-		<input type="radio" name="blod" value="o" checked data-tit="O型" />
-		<input type="radio" name="blod" value="B"  data-tit="B型" />
-		<input type="radio" name="blod" value="A"  data-tit="A型" />
-		<input type="radio" name="blod" value="AB"  data-tit="AB型" />	
-		<input type="submit" value="提交" />
+</head>
 
-	</form>	
+<body>
+	<!----start-header----->
+	 <div class="header">
+	     <div class="wrap">
+	      <div class="header-top">
+			<!---start-top-nav---->
+			<div class="top-nav">
+					<div class="top-header">
+						<div class="logo">
+							<a href="aGinaUI.html"><h1>aGina UI</h1></a>
+						</div>
+					</div>
+					<nav class="nav clearfix">
+			        	<!-- logo -->
+			        	 <div class="logo">
+			        	 	<a href="aGinaUI.html"><h1>aGina UI</h1></a>
+			        	 </div>
+			        	<!-- logo -->
+			        </nav>
+			</div>
+			<!---End-top-nav---->
+		</div>
+	  </div>
+	</div>
+   <!----End-header----->
+	     
+		 <!---start-content---->
+		 <div class="wrap">
+		     <div class="content">	 	
+		      <div class="about-data"> 
+		       <h2>自定义单选框</h2>
+                <p>自定义单选框样式,可通过form表单提交</p>		 	 
+		 	   <div class="showEffect">						
+					<form action="test.html" method="get">
+						<!-- <span class="active">男</span>
+						<span>女</span> -->
+						<input type="radio" name="sex" value="male" checked data-tit="男"/>
+						<input type="radio" name="sex" value="female" data-tit="女"/>
+						<input type="submit" value="提交" />
+						<hr/>
+						<input type="radio" name="blod" value="o" checked data-tit="O型" />
+						<input type="radio" name="blod" value="B"  data-tit="B型" />
+						<input type="radio" name="blod" value="A"  data-tit="A型" />
+						<input type="radio" name="blod" value="AB"  data-tit="AB型" />	
+						<input type="submit" value="提交" />
+
+					</form>	
+			    </div>
+			   </div>
+			 </div>
+		  </div>		   			
+		 <!---End-content---->
+		 <!---start-footer---->
+		  <div class="footer">
+		    <div class="wrap">
+			   	<div class="copy-right">
+					<p>Copyright &copy; 2016.agostoGina All rights reserved.<a href="http://agostoo.github.io">Agostoo.github</a></p>
+				</div>
+		   </div>
+	     </div>
+		 <!---End-footer---->
 </body>
 </html>

@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
   <script src="js/agosMove.js"></script>	
-  <script src="js/uijs.js">
-
-  </script>
+  <script src="js/base.js"></script>
 </head>
 <body>
 	<!----start-header----->
@@ -19,13 +17,13 @@
 			<div class="top-nav">
 					<div class="top-header">
 						<div class="logo">
-							<a href="index.html"><h1>aGina UI</h1></a>
+							<a href="aGinaUI.html"><h1>aGina UI</h1></a>
 						</div>
 					</div>
 					<nav class="nav clearfix">
 			        	<!-- logo -->
 			        	 <div class="logo">
-			        	 	<a href="index.html"><h1>aGina UI</h1></a>
+			        	 	<a href="aGinaUI.html"><h1>aGina UI</h1></a>
 			        	 </div>
 			        	<!-- logo -->
 			        </nav>
@@ -41,30 +39,28 @@
 		     <div class="content">	 	
 		      <div class="about-data"> 
 		       <h2>aGina UI</h2>
-                <p>aGina UI is built for designers and developers alike. We've designed all of our plugins to get you up and running quickly while being flexible enough to evolve with your needs and solve a plethora of use cases. If you're new to aGina UI, check out our getting started guide and other tutorials. Play around with the demos and read through the API documentation to get an idea of what's possible.
-
-Stay informed about what's going on with aGina UI by subscribing to our blog and following us on Twitter.</p>		 	 
+                <p>这是一组建立在 JavaScript 库上的用户界面交互、特效及小部件。</p>		 	 
 		 	   <div class="portfolio_main">
 						<ul id="filters" class="clearfix">
 							<li>
-								<span class="filter active">All</span>
+								<span class="filter active">全部(All)</span>
 							</li>
 							<li>
-								<span class="filter">Draggable</span>
+								<span class="filter">拖拽(Draggable)</span>
 							</li>
 							<li>
-								<span class="filter">Datepicker</span>
+								<span class="filter">日期选择器(Datepicker)</span>
 							</li>
 							<li>
-								<span class="filter">Button</span>
+								<span class="filter">按钮(Button)</span>
 							</li>
 							<li>
-								<span class="filter">Tabs</span>
+								<span class="filter">选项卡(Tabs)</span>
 							</li>
 						</ul>
 						<div id="portfoliolist" class="clearfix">
 
-							<!-- <div class="portfolio" data-cat="logo">
+							<!-- <div class="portfolio" data-cat="Draggable">
 								<div class="portfolio-wrapper">
 									<div class="fancyDemo">
 										<a rel="group" href="dragtest.html"><img src="images/s1.jpg" alt=""class="img-responsive"/></a>
@@ -81,7 +77,13 @@ Stay informed about what's going on with aGina UI by subscribing to our blog and
 
 							
 						</div>
+						<script>
+							 UI.public.createList(data);
+							 UI.public.tab();
+				   			 
+			    		</script>
 			       </div>
+
 			    </div>
 			 </div>
 		  </div>		   			
