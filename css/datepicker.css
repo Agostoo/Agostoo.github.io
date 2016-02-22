@@ -4,19 +4,24 @@
 	position:absolute;
 	width:210px;
 	border:1px solid pink;
-	background: #fff;
+	background:url(../images/clbg.jpg) no-repeat;
+	background-size: 100% 100%;
 	cursor: pointer;
 }
 .box a { 
 	position:absolute; 
-	top:0; width:40px; 
+	top:0; 
+	width:37px; 
 	height:40px; 
 	line-height:40px; 
 	text-decoration:none; 
 	text-align:center; 
+	color: #3788d3;
+	font-family: 'Niconne', cursive;
 }
 .box a:active { 
 	color:red; 
+
 }
 #pre { 
 	left:0; 
@@ -29,6 +34,7 @@
 	height: 30px;
 	line-height: 30px; 
 	text-align: center;
+	font-family: 'Niconne', cursive;
 }
 .box li{
 	width: 30px;
@@ -45,5 +51,5 @@
 	color: gray;
 }
 .today{
-	color: blue;
+	color: #ff7253;
 }  

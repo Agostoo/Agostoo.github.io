@@ -2,56 +2,56 @@ var data=[
 	{
 		'name':'Drag',
 		'url':'drag.html',
-		'img':'u1.jpg',
+		'img':'u1.png',
 		'data-cat':'拖拽(Draggable)'
 	},
 	{
 		'name':'FrameDrag',
 		'url':'frameDrag.html',
-		'img':'u2.jpg',
+		'img':'u2.png',
 		'data-cat':'拖拽(Draggable)'
 	},
 	{
 		'name':'LimitDrag',
 		'url':'limitDrag.html',
-		'img':'u3.jpg',
+		'img':'u3.png',
 		'data-cat':'拖拽(Draggable)'
 	},
 	{
 		'name':'Datepicker',
 		'url':'datepicker.html',
-		'img':'u4.jpg',
+		'img':'u4.png',
 		'data-cat':'日期选择器(Datepicker)'
 	},
 	{
 		'name':'Radio',
 		'url':'radio.html',
-		'img':'u5.jpg',
+		'img':'u5.png',
 		'data-cat':'按钮(Button)'
 	},
 	{
 		'name':'Checkbox',
 		'url':'checkbox.html',
-		'img':'u6.jpg',
+		'img':'u6.png',
 		'data-cat':'按钮(Button)'
 	},
 	{
 		'name':'Select',
 		'url':'select.html',
-		'img':'u7.jpg',
+		'img':'u7.png',
 		'data-cat':'按钮(Button)'
 	},
 	{
 		'name':'Tab',
 		'url':'tab.html',
-		'img':'u8.jpg',
+		'img':'u8.png',
 		'data-cat':'选项卡(Tabs)'
 
 	},
 	{
 		'name':'AutoTab',
 		'url':'autoTab.html',
-		'img':'u9.jpg',
+		'img':'u9.png',
 		'data-cat':'选项卡(Tabs)'
 	}
 ];
@@ -122,16 +122,6 @@ UI.public.createList=function (data){
 							</div>\
 						</div>';
 		oBox.appendChild(aDiv);
-	}
-	var aItem=UI.public.getByClass(oBox,'portfolio');
-	for (var i=0; i<aItem.length; i++)
-	{
-		aItem[i].onmouseover=function (){
-			move(UI.public.getByClass(this,'label')[0],{'bottom':0},1000);				
-		};
-		aItem[i].onmouseout=function (){
-			move(UI.public.getByClass(this,'label')[0],{'bottom':-40},1000);				
-		};
 	}	
 };
 

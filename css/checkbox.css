@@ -10,3 +10,9 @@ span{
 input[type=checkbox]{
 	display: none;
 }
+input[type=submit]{
+	background:#e17c65;
+	border: 1px solid #e17c65;
+	color:#fff;
+	border-radius: 4px;
+}

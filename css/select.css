@@ -17,9 +17,19 @@
 	width: 100px;
 	height: 30px;
 	line-height:30px;
-	background: #f4c16c;
+	background: #fff;
 }
 #j_select li:hover{
-	background: orange;
-	opacity: 0.8;}
+	background: #e17c65;
+	opacity: 0.8;
+}
 select{display: none;}	
+input[type=submit]{
+	position: absolute;
+	left:107px;
+	top:51px;
+	background:#e17c65;
+	border: 1px solid #e17c65;
+	color:#fff;
+	border-radius: 4px;
+}

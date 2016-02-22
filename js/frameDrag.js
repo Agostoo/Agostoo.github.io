@@ -5,7 +5,7 @@
 function FrameDrag(id){
     Drag.apply(this,arguments);
 
-    this.borderWidth=10;
+    this.borderWidth=7;
 }
 FrameDrag.prototype=new Drag();
 FrameDrag.prototype.constructor=FrameDrag;
@@ -26,7 +26,7 @@ FrameDrag.prototype.fnDown=function(){
     this.oNewDiv.style.left=this.oDiv.offsetLeft+'px';
     this.oNewDiv.style.top=this.oDiv.offsetTop+'px';
     this.oNewDiv.style.position='absolute';
-    this.oNewDiv.style.border=this.borderWidth+'px dashed #f60'
+    this.oNewDiv.style.border=this.borderWidth+'px dashed #FF7253'
 
     this.oDiv.parentNode.appendChild(this.oNewDiv);
 
