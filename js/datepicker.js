@@ -1,3 +1,7 @@
+/**
+ *  Author:agosto
+ *  Date: 2015/12/20
+ */
 (function (global){
     var addLink=false;
 

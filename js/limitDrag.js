@@ -1,6 +1,6 @@
 /**
  *  Author:agosto
- *  Date: 2016/1/21
+ *  Date: 2016/1/10
  */
 function LimitDrag(id){
     Drag.apply(this,arguments);

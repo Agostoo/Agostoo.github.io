@@ -1,3 +1,7 @@
+/**
+ *  Author:agosto
+ *  Date: 2016/1/21
+ */
 var data=[
 	{
 		'name':'Drag',

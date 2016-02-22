@@ -1,3 +1,7 @@
+/**
+ *  Author:agosto
+ *  Date: 2015/12/18
+ */
 (function (global){
 	var addLink=false;
 	global.radio=function (aInp)
@@ -12,7 +16,7 @@
 			oHead.appendChild(oLink);
 		}
 		
-
+		//创建出模拟的选项 
 		var aSpan=[];
 		for (var i=0; i<aInp.length; i++)
 		{
@@ -35,7 +39,7 @@
 						aSpan[i].className='';
 					}
 					aSpan[index].className='active';
-					aInp[index].checked=true;
+					aInp[index].checked=true;//与真实的单选关联
 				};
 			})(i);	
 		}
