@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>agosto</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+    </style>
+    <script src="angular.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script>
+        var app=angular.module('app',['ngRoute']);
+
+        //配置路由
+        app.config(function($routeProvider){
+            $routeProvider.when('/index',{
+                templateUrl:'tpl/index.tpl'
+            }).when('/msg',{
+                templateUrl:'tpl/msg.tpl',
+                controller:'msgCtrl'
+            }).when('/shop',{
+                templateUrl:'tpl/shop.tpl',
+                controller:'shopCtrl'
+            }).when('/test',{
+                templateUrl:'tpl/test.tpl',
+                controller:'testCtrl'
+            }).otherwise({
+                redirectTo:'/index'
+            });
+        });
+        // 留言板
+        app.controller('msgCtrl',function($scope){
+             $scope.data=[];
+
+            //add
+            $scope.add=function(){
+                $scope.data.push({
+                    name:$scope.username,
+                    age:$scope.age
+                });
+
+                $scope.username='';
+                $scope.age='';
+            };
+
+            //clear
+            $scope.clear=function(){
+                $scope.data.length=0;
+            };
+
+            //delete
+            $scope.delete=function(index){
+                $scope.data.splice(index,1);
+            };
+
+        });
+        // 购物车
+        app.controller('shopCtrl',function($scope){
+            $scope.data=[
+                {name:'袜子', price:3.3, count:5,mincount:5},
+                {name:'裙子', price:30, count:1,mincount:1},
+                {name:'甜筒', price:3.8, count:10,mincount:10},
+                {name:'电视', price:300, count:1,mincount:1}
+            ];
+
+            $scope.sum=function(){
+                var res=0;
+                angular.forEach($scope.data,function(item){
+                    res+=item.price*item.count;
+                });
+
+                return res;
+            };
+            $scope.change=function(count,index){
+                if(count<=$scope.data[index].mincount)
+                    $scope.data[index].count=$scope.data[index].mincount;
+            };
+
+        });
+        // 在线出题
+        var questionModel = {
+            newtitle : '新建试题',
+            previewtitle : '预览试题',
+            name : '',
+            fraction : '',
+            type : '1',
+            options : []
+        };
+        app.controller('testCtrl',function($scope){
+            $scope.question = questionModel;
+            $scope.addOption = function(){
+                var o = {content:''};
+                $scope.question.options.push(o);
+            };
+            $scope.delOption = function(index){
+                $scope.question.options.splice(index,1);
+            };
+        });
+        app.filter('typeFilter',function(){
+            return function(type){
+                return type==1 ? '单选题':'多选题';
+            }
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href="#/index">首页</a></li>
+        <li><a href="#/msg">留言板</a></li>
+        <li><a href="#/shop">购物车</a></li>
+        <li><a href="#/test">在线出题系统</a></li>
+    </ul>
+
+    <div ng-view></div>
+</body>
+</html>
+
+
+
+
